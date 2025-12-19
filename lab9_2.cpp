@@ -1,7 +1,20 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
+void printO(int x,int y){
+	if(x > 0 && y > 0){
+		int i = 0;
+		while(i < x){
+			int j = 0;
+			while (j < y){
+				cout << "O";
+				j++;
+			}
+			cout << "\n";
+			i++;
+		}
+	}else cout << "Invalid input";
+}
 
 int main(){
 	
